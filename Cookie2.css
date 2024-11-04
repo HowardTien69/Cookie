@@ -1,0 +1,59 @@
+body {
+    margin-top: 100px;
+    text-align: center;
+    background-color: black;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 150% 50%; }
+}
+
+div {
+    color : white;
+    overflow: hidden;
+    font-size: 50px;
+    text-shadow: 4px 4px rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 25px;
+    border: 1px solid;
+    outline-style: solid;
+    outline-color: blue;
+    outline-width: 10px;
+    background-image: linear-gradient(to right, rgb(94, 167, 176), rgb(74, 74, 193), rgb(94, 167, 176));
+    background-size: 300% 100%; 
+    animation: gradient-shift 1.5s linear infinite;
+}
+
+.b1 {
+    background-color: rgb(73, 108, 152);
+    color: rgb(250, 250, 250);
+    padding: 10px 33px;
+    font-size: 13px;
+    border-radius: 25px;
+    transition: transform 0.3s;
+}
+
+.b1:hover {
+    background-color: rgb(111, 142, 169);
+    transform: rotate(6deg);
+}
+
+.b2{
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 50px;
+}
+
+.cword {
+    align-items: center;
+    display: none;
+    color: #ffffff;
+    font-size: 17px;
+    text-shadow: 1px 1px #000000;
+    background-color: #a83232;
+    padding: 5px 8px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
